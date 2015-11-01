@@ -19,7 +19,7 @@
         <!-- endbuild -->
         <style>
         *{
-          color:#000 !important;
+          color:#708090;
           font-family: 'Source Sans Pro', sans-serif;
         }
         .btn-1a {
@@ -51,6 +51,14 @@
         .navbar{
           background-color: #fff;
         }
+        .fixedContainer {
+    background-color:#ddd;
+    position: fixed;
+    padding: 2em;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+}
         </style>
     </head>
     <body ng-app="rsapp" ng-controller="websiteCtrl">
@@ -65,7 +73,7 @@
   				<div  class="navbar-collapse collapse">
   					<ul class="nav navbar-nav cl-effect-3">
   						<li class="active"><a  href="/">Home</a></li>
-  						<li><a href="#section-services">Services</a></li>
+  						<li><a href="#section-services">Products & Services</a></li>
   						<li><a href="#section-contact">Contact</a></li>
   						<li><a href="#section-signup">Sign up</a></li>
   					</ul>
@@ -80,8 +88,7 @@
   				<div style="margin-top:160px;" class="row">
   					<div class="col-md-12">
   						<div class="align-center">
-  							<h1 style="font-size:75px;text-align:center;font-weight:5px!important;" class=" animate slogan">Admin Solutions for</h1>
-                <h1 style="font-size:75px;text-align:center;font-weight:5px!important;"class=" animate slogan"><span class="headline">Agents</span> <span class="thecolor">+</span> <span class="headline">Agencies</span></h1>
+  							<h1 style="font-size:75px;text-align:center;font-weight:20px!important;" class=" animate slogan">Admin Solutions for <span class="headline">Agents</span> <span class="thecolor">+</span> <span class="headline">Agencies</span></h1>
   						</div>
   					</div>
   				</div>
@@ -99,7 +106,7 @@
   		</section>
       <section>
         <div style="" class="container">
-          <div class="row" style="margin-top:80px;">
+          <div class="row" style="margin-top:150px;margin-bottom:80px;">
             <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
             <div class="wow bounceInUp col-md-3">
               <a href="#set-1" class="hi-icon"><img style="margin-top:25%;" src="styles/SquidInk_FlatIcons/svg_64/keyboard.svg" alt="" /></a>
@@ -133,34 +140,91 @@
           </div>
         </div>
       </section>
-      <section>
+      <!--CYA Section -->
+      <section style="background-color:#1E90FF;color:#fff;">
         <div class="container">
-          <div class="row" style="margin-top:80px;">
+          <div class="row" style="margin-top:80px;margin-bottom:80px;">
             <div class="col-md-12">
-              <h1 style="text-align:center;">CAPTURE YOUR APP (CYA)</h1>
+              <h1 class="wow bounceInUp" style="text-align:center;font-size:60px;color:#fff;">CAPTURE YOUR APP (CYA)</h1>
+
+            </div>
+          </div>
+          <div class="row" style="margin-top:80px;margin-bottom:80px;">
+            <div class="col-md-12">
+              <h3 class="wow bounceInUp" style="color:#fff;">With just one click, Capture Your Apps allows you to import online insurance applications directly into our database as you create them. Agents, and agencies alike, will save the time and aggravation of application data entry. Additionally, since CYA provides the exact information sent to the carrier, typos and data inconsistencies will be a thing of the past.</h3>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <p>With just one click, Capture Your Apps allows you to import online insurance applications directly into our database as you create them. Agents, and agencies alike, will save the time and aggravation of application data entry. Additionally, since CYA provides the exact information sent to the carrier, typos and data inconsistencies will be a thing of the past.</p>
+            <div class="col-md-4">
+              <h1 class="wow bounceInUp" style="color:#fff;">CYA is easy to use. <span style="color:#fff;" class="fa fa-arrow-right"></span></h1>
             </div>
+            <div class="wow bounceInUp col-md-8">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <span><img src="styles/SquidInk_FlatIcons/svg_64/cloud-download.svg" alt="" /></span>
+                      </div>
+                      <div class="col-md-10">
+                        <b style="color:#708090;">Download and install CYA from your RS Agency Services Back Office.</b>
+                      </div>
+                    </div>
+                    <div style="margin-top:10px;" class="row">
+                      <div class="col-md-2">
+                        <span><img src="styles/SquidInk_FlatIcons/svg_64/thunderbolt-display.svg" alt="" /></span>
+                      </div>
+                      <div class="col-md-10">
+                        <b style="color:#708090;">Launch CYA on your computer. It will ask you to login to ensure your apps get safely and securely to your online account :)</b>
+                      </div>
+                    </div>
+                    <div style="margin-top:10px;" class="row">
+                      <div class="col-md-2">
+                        <span><img style="height:64px;width:46;"src="internet-explorer.png" alt="" /></span>
+                      </div>
+                      <div class="col-md-10">
+                        <b style="color:#708090;">Then use the built-in internet browser to create your apps as you normally do.</b>
+                      </div>
+                    </div>
+                    <div style="margin-top:10px;" class="row">
+                      <div class="col-md-2">
+                        <span><img src="styles/SquidInk_FlatIcons/svg_64/bedge.svg" alt="" /></span>
+                      </div>
+                      <div class="col-md-10">
+                        <b style="color:#708090;">CYA will tell you which pages to Capture. All you’ll have to do is click the Capture button one time for each page. It’s just that easy!</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
           </div>
           <div class="row">
-            <div class="col-md-12">
-              <p>
-                <b>CYA is easy to use.</b> Download and install CYA from your RS Agency Services Back Office. When you launch CYA on your computer it will ask you to login to ensure your apps get safely and securely to your online account. Then use the built-in internet browser to create your apps as you normally do. CYA will tell you which pages to Capture. All you’ll have to do is click the Capture button one time for each page. It’s just that easy!
-              </p>
+            <div class="wow bounceInUp col-md-6">
+              <h1 style="color:#fff;">CYA is Ideal for agents. <span style="color:#fff;" class="fa fa-arrow-right"></span></h1>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <p>
-                <b>CYA is Ideal for agents.</b> Let’s face it, most agents struggle with record keeping. That makes CYA the perfect tool for the self-employed agent. It accurately records sales as they are made. Plus, the Back Office provides an easy way to keep track of which policies have been paid. More importantly, it shows which policies have NOT been paid AND provides the proof insurance companies will need to make it right.
-              </p>
+            <div class="col-md-4">
+              <h3 style="color:#fff;">
+                Let’s face it, most agents struggle with record keeping. That makes CYA the perfect tool for the self-employed agent. It accurately records sales as they are made. Plus, the Back Office provides an easy way to keep track of which policies have been paid. More importantly, it shows which policies have NOT been paid AND provides the proof insurance companies will need to make it right.
+              </h3>
+            </div>
+            <div class="col-md-2">
+
             </div>
           </div>
         </div>
       </section>
+      <!--end CYA section-->
+
+      <!--CPR section-->
+      <section>
+
+      </section>
+      <!--end CPR section-->
+
             <!-- build:js scripts/scripts.js -->
             <script type="text/javascript" src="bower_components/IconHoverEffects/js/modernizr.custom.js"></script>
             <script type="text/javascript" src="bower_components/IconHoverEffects/js/component.js"></script>
