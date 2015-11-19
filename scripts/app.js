@@ -1,4 +1,4 @@
-angular.module('rsapp', ['ngAnimate','ngTouch'])
+angular.module('rsapp', ['ngAnimate'])
 .controller('websiteCtrl', [function() {
   new WOW().init();
   $(window).scroll(function() {
