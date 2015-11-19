@@ -471,3 +471,14 @@ footer p {
 #header.active {
      box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
+ .border{
+   border-radius:5px;
+   -webkit-transition: border-color 1s ease;
+         -moz-transition: border-color 1s ease;
+           -o-transition: border-color 1s ease;
+          -ms-transition: border-color 1s ease;
+              transition: border-color 1s ease;
+ }
+ .border:hover{
+   border-color:#282828;
+ }
