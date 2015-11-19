@@ -476,12 +476,15 @@ footer p {
  }
  .border:hover{
    border-color:#4169E1;
+   color:#4169E1;
    -webkit-transition: border-color 1s ease;
          -moz-transition: border-color 1s ease;
            -o-transition: border-color 1s ease;
           -ms-transition: border-color 1s ease;
               transition: border-color 1s ease;
- }
- a:hover{
-   color:#4169E1;
+              -webkit-transition: color 1s ease;
+                    -moz-transition: color 1s ease;
+                      -o-transition: color 1s ease;
+                     -ms-transition: color 1s ease;
+                         transition: color 1s ease;
  }
