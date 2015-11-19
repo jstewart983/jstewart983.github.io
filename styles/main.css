@@ -472,7 +472,7 @@ footer p {
      box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
  .border{
-
+border-color:solid 1px #fff;
  }
  .border:hover{
    border-color:solid 1px #4169E1;
