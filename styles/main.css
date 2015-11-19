@@ -487,7 +487,6 @@ footer p {
  }
  .svg-wrapper {
   position: relative;
-  top: 50%;
   transform: translateY(-50%);
 	  margin: 0 auto;
   width: auto;
@@ -506,7 +505,6 @@ footer p {
   line-height: 32px;
   letter-spacing: 8px;
   color: #000;
-  top: -48px;
   position: relative;
 }
 .svg-wrapper:hover .shape {
