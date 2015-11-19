@@ -482,3 +482,6 @@ footer p {
  .border:hover{
    border-color:#282828;
  }
+ a:hover{
+   color:#4169E1;
+ }
