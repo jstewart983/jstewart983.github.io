@@ -1,0 +1,22 @@
+{
+  "name": "Portfolio Site",
+  "homepage": "https://github.com/jstewart983/jstewart983.github.io",
+  "authors": [
+    "jstewart983 <nj.jstewart@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dev/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-chart.js": "~0.8.5"
+  }
+}
