@@ -475,7 +475,7 @@ footer p {
 
  }
  .border:hover{
-   border-color:#4169E1;
+   border-color:solid 1px #4169E1;
    color:#4169E1;
    -webkit-transition: border-color 1s ease;
          -moz-transition: border-color 1s ease;
