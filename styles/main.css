@@ -490,7 +490,7 @@ footer p {
   top: 50%;
   transform: translateY(-50%);
 	  margin: 0 auto;
-  width: 320px;
+  width: auto;
 }
 .shape {
   stroke-dasharray: 140 540;
@@ -502,11 +502,10 @@ footer p {
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .text {
-  font-family: 'Roboto Condensed';
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 8px;
-  color: #fff;
+  color: #000;
   top: -48px;
   position: relative;
 }
