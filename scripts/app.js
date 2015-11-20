@@ -1,23 +1,27 @@
 angular.module('rsapp', ['chart.js'])
 
-.config(['ChartJsProvider', function (ChartJsProvider) {
-  // Configure all charts
-  ChartJsProvider.setOptions({
-    colours: ['#E74C3C', '#E74C3C','#E74C3C','#E74C3C'],
-    responsive: true
-  });
-}])
 .controller("LineCtrl", function ($scope) {
-  $scope.colours = ['#E74C3C','#E74C3C','#E74C3C','#E74C3C'];
-  $scope.labels = ["", "", "", "", "", "", ""];
-  $scope.series = [''];
-  $scope.data = [
-    [65, 59, 80, 81, 56, 55, 40]
-  ];
-  $scope.onClick = function (points, evt) {
-    console.log(points, evt);
+  var data = {
+      labels: ["", "", "", "", "", "", ""],
+      datasets: [
+
+          {
+              label: "My Second dataset",
+              fillColor: "rgb(231, 76, 60)",
+              strokeColor: "rgb(231, 76, 60)",
+              pointColor: "rgb(231, 76, 60)",
+              pointStrokeColor: "rgb(231, 76, 60)",
+              pointHighlightFill: "rgb(231, 76, 60)",
+              pointHighlightStroke: "rgb(231, 76, 60)",
+              data: [28, 48, 40, 19, 86, 27, 90]
+          }
+      ]
   };
 })
+  var myLineChart = new Chart(ctx).Line(data, options);
+  var ctx = document.getElementById("myChart").getContext("2d");
+
+
 
 .controller('websiteCtrl', [function() {
   new WOW().init();
