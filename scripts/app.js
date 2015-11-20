@@ -72,17 +72,17 @@ datasetFill : true,
 
 
   var data = {
-      labels: ["jQuery", "PHP", "Nodejs", "Javascript","Bootstrap" , "CSS", "Design","SQL","Angularjs","MySQL"],
+      labels: ["jQuery", "PHP", "Nodejs", "Javascript","Bootstrap" , "CSS", "HTML", "SQL", "Angularjs","MySQL"],
       datasets: [
           {
               label: "My First dataset",
-              fillColor: "#E74C3C",
-              strokeColor: "#E74C3C",
-              pointColor: "#E74C3C",
-              pointStrokeColor: "#E74C3C",
-              pointHighlightFill: "#E74C3C",
-              pointHighlightStroke: "#E74C3C",
-              data: [6, 5, 3, 6, 7, 5, 4,6,3,5]
+              fillColor: "#2ECC71",
+              strokeColor: "#2ECC71",
+              pointColor: "#2ECC71",
+              pointStrokeColor: "#2ECC71",
+              pointHighlightFill: "#2ECC71",
+              pointHighlightStroke: "#2ECC71",
+              data: [6, 5, 3, 6, 7, 5, 7,6,3,5]
           }
 
       ]
