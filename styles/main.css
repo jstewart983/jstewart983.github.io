@@ -491,6 +491,6 @@ border-color:solid 1px #fff;
 
  #footer {
      position: fixed;
-     bottom: 0;
+     bottom: -5%;
      width: 100%;
  }
