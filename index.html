@@ -38,7 +38,7 @@
   					<div class="animate col-md-6">
   						<div class="animate">
   							<h1 style="font-size:75px;">Jordan Stewart</h1>
-                <p style="font-size:15px;font-weight:10px!important;" class="animate">
+                <p style="font-size:25px;font-weight:10px!important;" class="animate">
                   "The Internet...that's the one with email right?"
                 </p>
   						</div>
@@ -67,12 +67,10 @@
                 </div>
             </div>
   				</div>
-          <div style="margin-top:60px;" class="row">
-            <div id="indicatorParent" style="text-align:center;" class="animate col-md-12">
-
-            </div>
-          </div>
   			</div>
+        <div style="margin-top:60px;width:100%;" class="animate row"ng-controller="lineCtrl">
+          <canvas id="line" class="chart chart-line" chart-data="data"chart-labels="labels" chart-legend="true" chart-series="series"chart-click="onClick" ></canvas>
+        </div>
   		</section>
             <!-- build:js scripts/scripts.js -->
             <script type="text/javascript" src="dev/bower_components/IconHoverEffects/js/modernizr.custom.js"></script>
