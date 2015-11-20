@@ -82,7 +82,7 @@ datasetFill : true,
               pointStrokeColor: "#2ECC71",
               pointHighlightFill: "#2ECC71",
               pointHighlightStroke: "#2ECC71",
-              data: [6, 5, 3, 6, 7, 5, 7,6,3,5]
+              data: [6, 6, 3, 6, 7, 5, 7,6,4,5]
           }
 
       ]
