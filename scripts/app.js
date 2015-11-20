@@ -19,19 +19,19 @@ angular.module('rsapp', [])
   };
   var options = {
     ///Boolean - Whether grid lines are shown across the chart
-scaleShowGridLines : true,
+scaleShowGridLines : false,
 
 //String - Colour of the grid lines
-scaleGridLineColor : "rgba(0,0,0,.05)",
+scaleGridLineColor : "#fff",
 
 //Number - Width of the grid lines
 scaleGridLineWidth : 1,
 
 //Boolean - Whether to show horizontal lines (except X axis)
-scaleShowHorizontalLines: true,
+scaleShowHorizontalLines: false,
 
 //Boolean - Whether to show vertical lines (except Y axis)
-scaleShowVerticalLines: true,
+scaleShowVerticalLines: false,
 
 //Boolean - Whether the line is curved between points
 bezierCurve : true,
