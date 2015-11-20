@@ -1,4 +1,4 @@
-angular.module('rsapp', ['ngAnimate','chart.js'])
+angular.module('rsapp', ['chart.js'])
 
 .config(['ChartJsProvider', function (ChartJsProvider) {
   // Configure all charts
