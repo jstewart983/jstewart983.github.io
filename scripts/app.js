@@ -27,7 +27,7 @@ angular.module('rsapp', [])
     ///Boolean - Whether grid lines are shown across the chart
 scaleShowGridLines : false,
 
-responsive: true,
+responsive: false,
 
 //String - Colour of the grid lines
 scaleGridLineColor : "#fff",
