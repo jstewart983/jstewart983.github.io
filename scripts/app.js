@@ -8,7 +8,7 @@ angular.module('rsapp', ['chart.js'])
   });
 }])
 .controller("LineCtrl", function ($scope) {
-
+  $scope.colours = ['#E74C3C','#E74C3C','#E74C3C','#E74C3C'];
   $scope.labels = ["", "", "", "", "", "", ""];
   $scope.series = [''];
   $scope.data = [
