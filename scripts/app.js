@@ -3,7 +3,7 @@ angular.module('rsapp', ['chart.js'])
 .config(['ChartJsProvider', function (ChartJsProvider) {
   // Configure all charts
   ChartJsProvider.setOptions({
-    colours: ['#E74C3C', '#E74C3C'],
+    colours: ['#E74C3C', '#E74C3C','#E74C3C','#E74C3C'],
     responsive: true
   });
 }])
@@ -12,8 +12,7 @@ angular.module('rsapp', ['chart.js'])
   $scope.labels = ["", "", "", "", "", "", ""];
   $scope.series = [''];
   $scope.data = [
-    [65, 59, 80, 81, 56, 55, 40],
-    [28, 48, 40, 19, 86, 27, 90]
+    [65, 59, 80, 81, 56, 55, 40]
   ];
   $scope.onClick = function (points, evt) {
     console.log(points, evt);
