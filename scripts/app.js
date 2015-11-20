@@ -17,6 +17,7 @@ angular.module('rsapp', [])
           }
       ]
   };
+  var options = {};
   var ctx = document.getElementById("myChart").getContext("2d");
   var myLineChart = new Chart(ctx).Line(data, options);
 })
