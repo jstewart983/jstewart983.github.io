@@ -1,18 +1,24 @@
 angular.module('rsapp', [])
 
 .controller("LineCtrl", function ($scope) {
+
+  var num = Math.floor(Math.random() * 100) + 20;
+  var arrayNum = Math.floor(Math.random() * 6) + 0;
+  var colorNum = Math.floor(Math.random() * 4) + 0;
+  var colorArray = ['#2ECC71','#3498DB','#F1C40F','#E74C3C'];
+
   var data = {
       labels: ["", "", "", "", "", "", ""],
       datasets: [
 
           {
-              label: "My Second dataset",
-              fillColor: "rgb(231, 76, 60)",
-              strokeColor: "rgb(231, 76, 60)",
-              pointColor: "rgb(231, 76, 60)",
-              pointStrokeColor: "rgb(231, 76, 60)",
-              pointHighlightFill: "rgb(231, 76, 60)",
-              pointHighlightStroke: "rgb(231, 76, 60)",
+              label: "",
+              fillColor: colorArray[colorNum],
+              strokeColor: colorArray[colorNum],
+              pointColor: colorArray[colorNum],
+              pointStrokeColor: colorArray[colorNum],
+              pointHighlightFill: colorArray[colorNum],
+              pointHighlightStroke: colorArray[colorNum],
               data: [28, 48, 40, 19, 86, 27, 90]
           }
       ]
@@ -62,10 +68,102 @@ datasetFill : true,
   };
   var ctx = document.getElementById("myChart").getContext("2d");
   var myLineChart = new Chart(ctx).Line(data, options);
+
+
+
+$('#contact-section').on('click',function(){
+  //#2ECC71
+  console.log('hey');
+  var data = {
+      labels: ["", "", "", "", "", "", ""],
+      datasets: [
+
+            {
+              label: "My Second dataset",
+              fillColor: "#2ECC71",
+              strokeColor: "#2ECC71",
+              pointColor: "#2ECC71",
+              pointStrokeColor: "#2ECC71",
+              pointHighlightFill: "#2ECC71",
+              pointHighlightStroke: "#2ECC71",
+              data: [68, 18, 40, 39, 86, 27, 20]
+            }
+        ]
+    };
+    myLineChart.datasets[0].points[arrayNum].value = num;
+    myLineChart.update();
+
+  });
+  $('#resume-section').on('click',function(){
+    //#2ECC71
+    console.log('hey');
+    var data = {
+        labels: ["", "", "", "", "", "", ""],
+        datasets: [
+
+              {
+                label: "My Second dataset",
+                fillColor: "#2ECC71",
+                strokeColor: "#2ECC71",
+                pointColor: "#2ECC71",
+                pointStrokeColor: "#2ECC71",
+                pointHighlightFill: "#2ECC71",
+                pointHighlightStroke: "#2ECC71",
+                data: [68, 18, 40, 39, 86, 27, 20]
+              }
+          ]
+      };
+      myLineChart.datasets[0].points[arrayNum].value = num;
+      myLineChart.update();
+
+    });
+    $('#about-section').on('click',function(){
+      //#2ECC71
+      console.log('hey');
+      var data = {
+          labels: ["", "", "", "", "", "", ""],
+          datasets: [
+
+                {
+                  label: "My Second dataset",
+                  fillColor: "#2ECC71",
+                  strokeColor: "#2ECC71",
+                  pointColor: "#2ECC71",
+                  pointStrokeColor: "#2ECC71",
+                  pointHighlightFill: "#2ECC71",
+                  pointHighlightStroke: "#2ECC71",
+                  data: [68, 18, 40, 39, 86, 27, 20]
+                }
+            ]
+        };
+        myLineChart.datasets[0].points[arrayNum].value = num;
+        myLineChart.update();
+
+      });
+      $('#work-section').on('click',function(){
+        //#2ECC71
+        console.log('hey');
+        var data = {
+            labels: ["", "", "", "", "", "", ""],
+            datasets: [
+
+                  {
+                    label: "My Second dataset",
+                    fillColor: "#2ECC71",
+                    strokeColor: "#2ECC71",
+                    pointColor: "#2ECC71",
+                    pointStrokeColor: "#2ECC71",
+                    pointHighlightFill: "#2ECC71",
+                    pointHighlightStroke: "#2ECC71",
+                    data: [68, 18, 40, 39, 86, 27, 20]
+                  }
+              ]
+          };
+          myLineChart.datasets[0].points[arrayNum].value = num;
+          myLineChart.update();
+
+        });
 })
-
-
-
 
 .controller('websiteCtrl', [function() {
   new WOW().init();
@@ -77,6 +175,10 @@ datasetFill : true,
     else {
         $("#header").removeClass("active");
     }
+});
+$('a[href*=#]').on('click', function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 });
 
 }]);
