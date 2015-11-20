@@ -19,7 +19,7 @@ angular.module('rsapp', [])
               pointStrokeColor: colorArray[colorNum],
               pointHighlightFill: colorArray[colorNum],
               pointHighlightStroke: colorArray[colorNum],
-              data: [28, 48, 40, 19, 86, 27, 90]
+              data: [Math.floor(Math.random() * 100) + 20, Math.floor(Math.random() * 100) + 20, Math.floor(Math.random() * 100) + 20, Math.floor(Math.random() * 100) + 20, Math.floor(Math.random() * 100) + 20, Math.floor(Math.random() * 100) + 20, Math.floor(Math.random() * 100) + 20]
           }
       ]
   };
@@ -68,6 +68,30 @@ datasetFill : true,
   };
   var ctx = document.getElementById("myChart").getContext("2d");
   var myLineChart = new Chart(ctx).Line(data, options);
+
+
+
+  var data = {
+      labels: ["jQuery", "PHP", "Nodejs", "Javascript","Bootstrap" , "CSS", "Design","SQL","Angularjs","MySQL"],
+      datasets: [
+          {
+              label: "My First dataset",
+              fillColor: "#E74C3C",
+              strokeColor: "#E74C3C",
+              pointColor: "#E74C3C",
+              pointStrokeColor: "#E74C3C",
+              pointHighlightFill: "#E74C3C",
+              pointHighlightStroke: "#E74C3C",
+              data: [6, 5, 3, 6, 7, 5, 4,6,3,5]
+          }
+
+      ]
+  };
+
+  var ctx = document.getElementById("radarChart").getContext("2d");
+  var myRadarChart = new Chart(ctx).Radar(data, options);
+
+
 
 
 
