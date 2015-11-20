@@ -1,4 +1,4 @@
-angular.module('rsapp', ['chart.js'])
+angular.module('rsapp', [])
 
 .controller("LineCtrl", function ($scope) {
   var data = {
